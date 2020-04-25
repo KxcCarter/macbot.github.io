@@ -1,0 +1,12 @@
+body {
+  font-family: 'VT323', monospace;
+  background-color: #778899;
+}
+
+.yay {
+  color: limegreen;
+}
+
+li {
+  font-size: 1.5rem;
+}
