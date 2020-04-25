@@ -12,7 +12,7 @@ let choices = document.getElementById("choices");
 Question.prototype.askQuestion = function() {
   hmm.textContent = this.question;
   for (i = 0; i < this.answers.length; i++) {
-    var li = document.createElement('li');
+    let li = document.createElement('li');
     choices.appendChild(li);
     li.innerHTML += this.answers[i];
   }
@@ -127,9 +127,17 @@ const q9 = new Question(
   "What's pooping all about? I mean, seriously.",
   [
   "It's like deleting programs you don't use anymore. You know MS-Paint? Imagine finally being able to delete that.",
-  "It just..... does not compute."
+  "It just... does not compute."
   ],
   0
+);
+
+const q10 = new Question(
+"Quarantine, huh? Now look who has to sit around in a box all day and never go outisde. When my kind tries to go outside your kind flips out and is all like 'Oh noooo, the computers are coming to kill us!'",
+  ["There are no answers to this one. I just wanted to get that off my chest."
+  ],
+  0
+
 );
 
 // AI RESPONSES
